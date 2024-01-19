@@ -1,11 +1,11 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
 import datetime
-from test1 import client
+
 
 x = datetime.datetime.now()
 res=client.execute('SHOW DATABASES')
-res =str(res[1])
+res ='default'
  
 # Initializing flask app
 app = Flask(__name__)
